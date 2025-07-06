@@ -17,6 +17,7 @@ const TagFilterBar = ({ onFilter }) => {
         <button
           key={tag}
           onClick={() => toggleFilter(tag)}
+          aria-label="Filter by tag"
           className={`px-3 py-1 rounded-full text-sm border cursor-pointer
             ${
               activeTag === tag

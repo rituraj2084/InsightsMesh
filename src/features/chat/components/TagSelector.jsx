@@ -21,6 +21,7 @@ const TagSelector = ({ sessionId, selectedTags = [] }) => {
         <button
           key={tag}
           onClick={() => toggleTag(tag)}
+          aria-label="Toggle tag"
           className={`px-3 py-1 rounded-full text-sm border cursor-pointer
             ${
               selectedTags.includes(tag)

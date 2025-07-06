@@ -21,6 +21,9 @@ const ChatPage = () => {
     <div
       className="fixed inset-0 z-50 bg-transparent backdrop-blur-md flex items-center justify-center transition-opacity duration-300"
       onClick={() => navigate('/')}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="chat-title"
     >
       <div
         className="bg-primary rounded-xl shadow-lg w-full max-w-3xl h-[80vh] flex flex-col relative"

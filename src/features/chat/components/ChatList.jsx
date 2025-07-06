@@ -23,12 +23,14 @@ const ChatList = ({ filterTag }) => {
       {filtered.map((session) => (
         <div
           key={session.id}
+          role="button"
+          aria-label="chat-card"
           onClick={() => navigate(`/chat/${session.id}`)}
           className="bg-primary text-primary rounded-xl p-6 shadow hover:shadow-lg transition-all duration-200 cursor-pointer hover:scale-[1.02]"
         >
-          <h3 className="font-semibold text-lg mb-2">
+          <h2 className="font-semibold text-lg mb-2">
             {session.title || 'Untitled Chat'}
-          </h3>
+          </h2>
           <p className="text-sm bg-primary text-primary">
             {session.summary || 'No summary available yet.'}
           </p>

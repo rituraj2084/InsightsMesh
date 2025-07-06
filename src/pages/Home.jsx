@@ -10,7 +10,7 @@ const Home = () => {
     <div className="min-h-screen px-4 py-10 bg-secondary text-primary">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl font-bold mb-2">InsightsMesh</h1>
-        <p className="text-lg text-secondary mb-10">
+        <p className="text-lg text-primary mb-10">
           All your chats in one platform!
         </p>
 

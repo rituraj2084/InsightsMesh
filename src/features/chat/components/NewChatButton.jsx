@@ -17,6 +17,7 @@ const NewChatButton = () => {
   return (
     <button
       onClick={handleNewChat}
+      aria-label="New Chat"
       className="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-full shadow-lg text-sm font-medium z-20 cursor-pointer"
     >
       + New Chat

@@ -24,10 +24,17 @@ const LoginPage = () => {
           className="w-full p-2 mb-4 border border-custom rounded text-primary bg-secondary"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') handleLogin();
+          }}
+          aria-label="Username input"
+          aria-required="true"
         />
         <button
           onClick={handleLogin}
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+          aria-label="Login"
+          disabled={!username.trim()}
+          className="w-full bg-blue-600 text-white py-2 rounded cursor-pointer hover:bg-blue-700"
         >
           Login
         </button>

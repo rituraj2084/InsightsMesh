@@ -32,6 +32,7 @@ const MainLayout = () => {
 
           <button
             onClick={() => dispatch(toggleTheme())}
+            aria-label="Toggle theme"
             className="px-3 py-1 border border-custom rounded text-sm cursor-pointer hover:bg-secondary transition-colors"
           >
             {theme === 'dark' ? '☀️ Light' : '🌙 Dark'}

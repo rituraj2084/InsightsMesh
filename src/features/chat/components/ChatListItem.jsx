@@ -12,8 +12,10 @@ const ChatListItem = ({ session }) => {
       transition={{ duration: 0.3 }}
       className="border p-3 rounded-md shadow hover:shadow-md bg-white dark:bg-gray-800 cursor-pointer"
       onClick={() => navigate(`/chat/${session.id}`)}
+      role="button"
+      aria-label="chat-card"
     >
-      <h3 className="font-bold text-lg">{session.title || 'Untitled Chat'}</h3>
+      <h2 className="font-bold text-lg">{session.title || 'Untitled Chat'}</h2>
       <p className="text-sm text-gray-500 dark:text-gray-400">
         {session.summary || 'No summary yet'}
       </p>
